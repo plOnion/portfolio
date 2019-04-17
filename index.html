@@ -16,7 +16,14 @@
 	<header>
 		<div class="header__container">
 			<nav id="bt-menu" class="header__menu">
-				<a href="#" class="menu__trigger"><span></span></a>
+				<div class="menu__trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<ul>
 					<li><a href="#about"><i class="icon-user"></i> <span>About me</span></a></li>
 					<li><a href="#skills"><i class="icon-wrench"></i> <span>Skills</span></a></li>
@@ -29,10 +36,31 @@
     <main>
         <section id="about" style="height: 100vh">blabla</section>
         <section id="skills" style="height: 100vh">blabla</section>
-        <section id="projects" style="height: 100vh">blabla</section>
+				<section id="projects" style="height: 100vh">blabla</section>
+				
+				<div style="width: 100%; overflow: hidden;"><div style="width: 0px;
+			height: 0;
+			border-left: 0px solid transparent;
+			border-right: 120vw solid transparent;
+			border-bottom: 100px solid #F34A53;"></div></div>
 	</main>
 	<footer>
-		<section id="contact"></section>
+		<section id="contact" class="footer">
+			
+			<div class="footer__cooperation" style="">
+				<h3>WSPÓŁPRACA</h3>
+				<p>Widzisz mnie w swoim zespole? A może chciałbyś nawiązać współpracę? </p>
+				<p>Po prostu <a href="mailto:damian.lukasiewicz@dev">napisz</a></p>
+			</div>
+			<div class="footer__textbox">"Każdy ma życiu to na co się odważy."</div>
+			<div class="social__iconsbox">
+				<a href="https://www.linkedin.com/in/plonion/" alt="Linkedin" target="_blank" ><i class="social__icon icon-linkedin-squared"></i></a>
+				<a href="https://github.com/plOnion" alt="Github" target="_blank" ><i class="social__icon icon-github"></i></a>
+				<a href="mailto:kontakt@damianlukasiewicz.dev"><i class="social__icon icon-mail-alt"></i></a>
+				<a href="tel:+48792899091" alt="Zadzwoń" target="_blank" ><i class="social__icon icon-phone-squared"></i></a>
+			</div>
+			<div class="copyrights" style="font-size: 0.8rem">2019 - <i class="icon-copyright"></i> Copyrights plOnion</div>
+		</section>
 	</footer>
 </body>
 <script src="js/main.js"></script>

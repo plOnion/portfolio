@@ -10,13 +10,14 @@
 	const init = () => {
 
 		const menu = document.querySelector( ".header__menu" );
-		const trigger = menu.querySelector( "a.menu__trigger" );
+		const trigger = menu.querySelector( ".menu__trigger" );
 		const eventtype = mobilecheck() ? 'touchstart' : 'click';
 
 		trigger.addEventListener( eventtype, e => {
 			e.stopPropagation();
 			e.preventDefault();
 			menu.classList.toggle("header__menu-open");
+			trigger.classList.toggle("open");
 		});
 
 	}
